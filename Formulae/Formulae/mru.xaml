@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formulae.mru">
+    <ScrollView>
+        <StackLayout BackgroundColor="SteelBlue" >
+            <Frame BackgroundColor="#2B2D2F" Padding="13" CornerRadius="0" Margin="0">
+                <Label Text="MRU-MOVIMIENTO RECTILÍNEO UNIFORME" HorizontalTextAlignment="Center" TextColor="white" FontSize="18" FontFamily="{StaticResource fuente}" />
+            </Frame>
+
+            <Label Text="FÓRMULA:" HorizontalTextAlignment="Start"  FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25" />
+            <Image Source="MRU2.PNG" HorizontalOptions="Center" HeightRequest="200" WidthRequest="345" />
+            <Label Text="SIMBOLOGÍA:" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25"  />
+            <Label Text="V= VELOCIDAD (m/s)" HorizontalTextAlignment="Start" TextColor="Black" FontSize="15" Margin="25" FontFamily="{StaticResource fuente}" />
+            <Label Text="D= DISTANCIA (m)" HorizontalTextAlignment="Start" TextColor="Black" FontSize="15" Margin="25" FontFamily="{StaticResource fuente}" />
+            <Label Text="T= TIEMPO (s)" HorizontalTextAlignment="Start" TextColor="Black" FontSize="15" Margin="25" FontFamily="{StaticResource fuente}" />
+            <Label Text="EJEMPLO:" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25"/>
+            <Image Source="mruej.PNG" HorizontalOptions="Center" HeightRequest="250" WidthRequest="345" />
+            <Label Text="FORMULARIO:" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25"/>
+            <Label Text="INGRESA AL VALOR DE LA VARIABLE: " FontSize="15" TextColor="black" Margin="25" FontFamily="{StaticResource fuente}" />
+            <Entry Placeholder="..." x:Name="txtN1" Keyboard="Numeric" BackgroundColor="LightSteelBlue"  HorizontalOptions="Center" WidthRequest="345"/>
+            <Label Text="INGRESA EL VALOR DE LA VARIABLE: " FontSize="15" TextColor="black" Margin="25" FontFamily="{StaticResource fuente}"/>
+            <Entry Placeholder="..." x:Name="txtN2" Keyboard="Numeric" BackgroundColor="LightSteelBlue" HorizontalOptions="Center" WidthRequest="345"/>
+            <Label Text="¿Qué desea calcular?" HorizontalTextAlignment="Start" FontAttributes="Bold" FontSize="20" TextColor="black" Margin="25"/>
+            <Picker x:Name="pkVar" SelectedIndexChanged="pkVar_SelectedIndexChanged_1" Background="#2B2D2F" HorizontalOptions="Center" TextColor="White" WidthRequest="340"/>
+            <Label x:Name="lblRes" Text="Resultado" FontSize="15" TextColor="Black" Margin="25" FontFamily="{StaticResource fuente}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

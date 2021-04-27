@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formulae.lgu">
+    <ScrollView>
+        <StackLayout BackgroundColor="SteelBlue" >
+            <Frame BackgroundColor="#2B2D2F" Padding="13" CornerRadius="0" Margin="0">
+                <Label Text="LEY DE GRAVITACIÓN UNIVERSAL" HorizontalTextAlignment="Center" TextColor="white" FontSize="18" FontFamily="{StaticResource fuente}" />
+            </Frame>
+
+            <Label Text="FÓRMULA Y SIMBOLOGÍA:" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25" />
+            <Image Source="FORMULALEY.jpg" HorizontalOptions="Center" HeightRequest="200" WidthRequest="345"/>
+            <Label Text="EJEMPLO:" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25" />
+            <Image Source="EJEMPLOLEY.jpg" HorizontalOptions="Center" HeightRequest="200"  WidthRequest="345" />
+            <Label Text="FORMULARIO:" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25" />
+            <Label Text="INGRESA LA MASA DEL CUERPO 1 (kg): " FontSize="15" TextColor="black" Margin="25" FontFamily="{StaticResource fuente}"/>
+            <Entry Placeholder="..." x:Name="txtN2" Keyboard="Numeric" BackgroundColor="LightSteelBlue" HorizontalOptions="Center" WidthRequest="345"/>
+            <Label Text="INGRESA LA MASA DEL CUERPO 2 (kg): " FontSize="15" TextColor="black" Margin="25" FontFamily="{StaticResource fuente}"/>
+            <Entry Placeholder="..." x:Name="txtN3" Keyboard="Numeric" BackgroundColor="LightSteelBlue" HorizontalOptions="Center" WidthRequest="345"/>
+            <Label Text="INGRESA LA DISTANCIA ENTRE LOS CUERPOS (m): " FontSize="15" TextColor="black" Margin="25" FontFamily="{StaticResource fuente}"/>
+            <Entry Placeholder="..." x:Name="txtN4" Keyboard="Numeric" BackgroundColor="LightSteelBlue" HorizontalOptions="Center" WidthRequest="345"/>
+            <Button Text="CALCULAR" BorderColor="SteelBlue" Clicked="Button_Clicked"  CornerRadius="100" Padding="2" BackgroundColor="#2B2D2F" TextColor="White" Margin="25"/>
+            <Entry x:Name="resultado" Placeholder="RESULTADO" IsEnabled="False" TextColor="Black" PlaceholderColor="Black" BackgroundColor="LightSkyBlue" Margin="25"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

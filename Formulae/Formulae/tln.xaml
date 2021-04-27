@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formulae.tln">
+    <ScrollView>
+        <StackLayout BackgroundColor="SteelBlue" >
+            <Frame BackgroundColor="#2B2D2F" Padding="13" CornerRadius="0" Margin="0">
+                <Label Text="TERCERA LEY DE NEWTON" HorizontalTextAlignment="Center" TextColor="white" FontSize="18" FontFamily="{StaticResource fuente}" />
+            </Frame>
+
+            <Label Text="FÓRMULA" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25" />
+            <Image Source="FORMULATERCERA.jpg" HeightRequest="75" />
+            <Label Text="SIMBOLOGÍA:" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25"/>
+            <Label Text="F1= FUERZA DE ACCIÓN (N)" HorizontalTextAlignment="Start" TextColor="Black" FontSize="15" Margin="25" FontFamily="{StaticResource fuente}" />
+            <Label Text="F2= FUERZA DE REACCIÓN (N)" HorizontalTextAlignment="Start" TextColor="Black" FontSize="15" Margin="25" FontFamily="{StaticResource fuente}" />
+            <Label Text="EJEMPLO:" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25" />
+            <Image Source="EJEMPLOTERCERA.jpg" HeightRequest="190" Margin="25"/>
+            <Label Text="FORMULARIO:" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="Black" FontSize="18" Margin="25"/>
+            <Label Text="ESCRIBE LA FUERZA " FontSize="15" TextColor="black" Margin="25" FontFamily="{StaticResource fuente}" />
+            <Entry Placeholder="..." x:Name="txtN1" Keyboard="Numeric" BackgroundColor="LightSteelBlue" HorizontalOptions="Center" WidthRequest="345"/>
+            <Button Text="CALCULAR" BorderColor="SteelBlue" Clicked="Button_Clicked"  CornerRadius="100" Padding="2" BackgroundColor="#2B2D2F" TextColor="White" Margin="25"/>
+            <Entry x:Name="resultado" Placeholder="RESULTADO" IsEnabled="False" TextColor="Black" PlaceholderColor="Black" BackgroundColor="LightSkyBlue" Margin="25" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
